@@ -62,7 +62,21 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+<step action="wait" value="3000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;Add To Cart&quot;)" selected="true"/>
 		<accessor type="click" value="submit(&quot;button&quot;)" selected="false"/>
@@ -77,7 +91,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Continue shopping&quot;)" selected="true"/>
 		<accessor type="click" value="link(7)" selected="false"/>
@@ -93,7 +107,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
 	<dialect type="sahi">
 		<accessor type="click" value="image(&quot;Ruby on Rails Jr. Spaghetti&quot;)" selected="true"/>
 		<accessor type="click" value="image(&quot;ror_jr_spaghetti.jpeg&quot;)" selected="false"/>
@@ -108,7 +122,7 @@
 
 
 
-<step action="setValue" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+<step action="setValue" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="setValue" value="numberbox(&quot;quantity&quot;)" selected="false"/>
 		<accessor type="setValue" value="numberbox(&quot;quantity&quot;)" selected="false"/>
@@ -127,7 +141,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;Add To Cart&quot;)" selected="true"/>
 		<accessor type="click" value="submit(&quot;button&quot;)" selected="false"/>
@@ -142,7 +156,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Continue shopping&quot;)" selected="true"/>
 		<accessor type="click" value="link(10)" selected="false"/>
@@ -158,7 +172,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;product-description&quot;)" selected="true"/>
 		<accessor type="click" value="div(21)" selected="false"/>
