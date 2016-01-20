@@ -7,7 +7,8 @@
 
 <step action="navigateTo" value="&quot;http://ec2-52-35-57-90.us-west-2.compute.amazonaws.com:8888&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
-		<accessor type="navigateTo" value='' selected="true"/>
+		<accessor type="navigateTo" value='' selected="false"/>
+		<accessor type='' value="numberbox(&quot;quantity&quot;),storedVars['qty']" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value='' selected="true"/>
@@ -122,16 +123,16 @@
 
 
 
-<step action="setValue" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="setValue" value="storedVars['qty']" type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
-		<accessor type="setValue" value="numberbox(&quot;quantity&quot;)" selected="false"/>
-		<accessor type="setValue" value="numberbox(&quot;quantity&quot;)" selected="false"/>
+		<accessor type="setValue" value="numberbox(&quot;quantity&quot;)" selected="true"/>
+		<accessor type="setValue" value="numberbox(&quot;quantity&quot;)" selected="true"/>
 		<accessor type="setValue" value="numberbox(0)" selected="false"/>
 		<accessor type="setValue" value="numberbox(&quot;title form-control&quot;)" selected="false"/>
 		<accessor type='' value="numberbox(&quot;quantity&quot;),storedVars[&quot;quantity&quot;]" selected="false"/>
 		<accessor type='' value="numberbox(&quot;quantity&quot;) " selected="false"/>
 		<accessor type='' value="numberbox(&quot;quantity&quot;),storedVars[&quot;qty&quot;]" selected="false"/>
-		<accessor type='' value="numberbox(&quot;quantity&quot;),storedVars['qty']" selected="true"/>
+		<accessor type='' value="numberbox(&quot;quantity&quot;),storedVars['qty']" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//input[@id='quantity']&quot;" selected="true"/>
