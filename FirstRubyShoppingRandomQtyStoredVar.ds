@@ -47,7 +47,7 @@
 
 
 
-<step action="store" value="_sahi._getText(_sahi._numberbox(&quot;quantity&quot;))" type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+<step action="store" value="_sahi._getText(_numberbox(&quot;quantity&quot;))" type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 		<accessor type='' value="quantity" selected="true"/>
