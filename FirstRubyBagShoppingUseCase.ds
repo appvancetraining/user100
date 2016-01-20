@@ -126,15 +126,63 @@
 
 
 
-<step action="wait" value="3000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
-		<accessor type='' value='' selected="false"/>
+		<accessor type="click" value="image(&quot;Ruby on Rails Bag&quot;)" selected="true"/>
+		<accessor type="click" value="image(&quot;ror_bag.jpeg&quot;)" selected="false"/>
+		<accessor type="click" value="image(2)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value='' selected="false"/>
+		<accessor attribute='' value="&quot;//img[@alt='Ruby on Rails Bag']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='product_2']/div/div[1]/a[1]/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/div/div[1]/a[1]/img&quot;" selected="false"/>
 	</dialect>
-	<dialect type="flextesting">
-		<accessor type='' attribute='' value='' selected="false"/>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(&quot;Add To Cart&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;button&quot;)" selected="false"/>
+		<accessor type="click" value="submit(&quot;add-to-cart-button&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//button[@id='add-to-cart-button']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='inside-product-cart-form']/div/div[2]/div/span/button&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//button&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(&quot;Update&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;button&quot;)" selected="false"/>
+		<accessor type="click" value="submit(&quot;update-button&quot;)" selected="false"/>
+		<accessor type="click" value="submit(&quot;btn btn-primary&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//button[@id='update-button']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='update-cart']/div/div[2]/div/button[1]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//button[1]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Continue shopping&quot;)" selected="true"/>
+		<accessor type="click" value="link(11)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://ec2-52-35-57-90.us-west-2.compute.amazonaws.com:8888/products&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;continue&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Continue shopping')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//p[@id='clear_cart_link']/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//p/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
