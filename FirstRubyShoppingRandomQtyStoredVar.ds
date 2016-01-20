@@ -31,7 +31,7 @@
 
 
 
-<step action="setValue" value="eval('Math.floor(Math.random()*10)')" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+<step action="setValue" value="eval('Math.floor(Math.random()*10+1)')" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="setValue" value="numberbox(&quot;quantity&quot;)" selected="true"/>
 		<accessor type="setValue" value="numberbox(&quot;quantity&quot;)" selected="true"/>
