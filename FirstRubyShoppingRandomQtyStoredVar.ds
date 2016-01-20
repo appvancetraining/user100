@@ -93,7 +93,29 @@
 
 
 
-<step action="setValue" value="&quot;5&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="assertExists" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+	<dialect type="sahi">
+		<accessor type="assertExists" value="cell(&quot;Jerseys&quot;)" selected="false"/>
+		<accessor type="assertExists" value="row(&quot;even&quot;)" selected="false"/>
+		<accessor type="assertExists" value="row(&quot;Manufacturer Jerseys&quot;)" selected="false"/>
+		<accessor type="assertExists" value="row(0)" selected="false"/>
+		<accessor type="assertExists" value="table(&quot;product-properties&quot;)" selected="false"/>
+		<accessor type="assertExists" value="table(&quot;table table-striped&quot;)" selected="false"/>
+		<accessor type="assertExists" value="table(0)" selected="false"/>
+		<accessor type='' value="cell(&quot;Jerses&quot;)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//table[@id='product-properties']/tbody/tr[1]/td[2]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//td[2]&quot;" selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type="assertExists" attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;5&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
 	<dialect type="sahi">
 		<accessor type="setValue" value="numberbox(&quot;quantity&quot;)" selected="false"/>
 		<accessor type="setValue" value="numberbox(&quot;quantity&quot;)" selected="false"/>
@@ -111,7 +133,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;Add To Cart&quot;)" selected="true"/>
 		<accessor type="click" value="submit(&quot;button&quot;)" selected="false"/>
@@ -126,7 +148,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Continue shopping&quot;)" selected="true"/>
 		<accessor type="click" value="link(10)" selected="false"/>
@@ -137,6 +159,20 @@
 		<accessor attribute='' value="&quot;//a[contains(text(),'Continue shopping')]&quot;" selected="true"/>
 		<accessor attribute='' value="&quot;//p[@id='clear_cart_link']/a&quot;" selected="false"/>
 		<accessor attribute='' value="&quot;//p/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+	<dialect type="sahi">
+		<accessor type="click" value="div(&quot;product-description&quot;)" selected="true"/>
+		<accessor type="click" value="div(21)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='product-description']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='content']/div/div[2]/div/div[1]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div/div[2]/div/div[1]&quot;" selected="false"/>
 	</dialect>
 </step>
 
