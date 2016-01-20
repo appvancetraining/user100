@@ -1,0 +1,128 @@
+<testcase name='FirstRubyBagShoppingUseCase' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="" exectype="" errorhandling=""/>
+
+<step action="navigateTo" value="&quot;http://ec2-52-35-57-90.us-west-2.compute.amazonaws.com:8888/&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Login&quot;)" selected="true"/>
+		<accessor type="click" value="link(1)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://ec2-52-35-57-90.us-west-2.compute.amazonaws.com:8888/login&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Login')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li[@id='link-to-login']/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/login')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;john@example.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="setValue" value="emailbox(&quot;spree_user[email]&quot;)" selected="true"/>
+		<accessor type="setValue" value="emailbox(&quot;spree_user_email&quot;)" selected="false"/>
+		<accessor type="setValue" value="emailbox(0)" selected="false"/>
+		<accessor type="setValue" value="emailbox(&quot;form-control&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='spree_user_email']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='password-credentials']/p[1]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//p[1]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;foobar12&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="setValue" value="password(&quot;spree_user[password]&quot;)" selected="true"/>
+		<accessor type="setValue" value="password(&quot;spree_user_password&quot;)" selected="false"/>
+		<accessor type="setValue" value="password(0)" selected="false"/>
+		<accessor type="setValue" value="password(&quot;form-control&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='spree_user_password']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='password-credentials']/p[2]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//p[2]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(&quot;Login&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;commit&quot;)" selected="false"/>
+		<accessor type="click" value="submit(&quot;btn btn-lg btn-success btn-block&quot;)" selected="false"/>
+		<accessor type="click" value="submit(1)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@name='commit']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='new_spree_user']/p[2]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//form/p[2]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;Ruby on Rails Tote&quot;)" selected="true"/>
+		<accessor type="click" value="image(&quot;ror_tote.jpeg&quot;)" selected="false"/>
+		<accessor type="click" value="image(1)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[@alt='Ruby on Rails Tote']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='product_1']/div/div[1]/a[1]/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[1]/a[1]/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(&quot;Add To Cart&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;button&quot;)" selected="false"/>
+		<accessor type="click" value="submit(&quot;add-to-cart-button&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//button[@id='add-to-cart-button']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='inside-product-cart-form']/div/div[2]/div/span/button&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//button&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Continue shopping&quot;)" selected="true"/>
+		<accessor type="click" value="link(8)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://ec2-52-35-57-90.us-west-2.compute.amazonaws.com:8888/products&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;continue&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Continue shopping')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//p[@id='clear_cart_link']/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//p/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
